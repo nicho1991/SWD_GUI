@@ -20,7 +20,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <ListView x:Name="LobbyViewList" Margin="10,10,16,10" Grid.Row="2" SelectionChanged="LobbyViewList_SelectionChanged">
-            <ListViewItem Content="MinBruger420" FontWeight="Black" Loaded="ListViewItem_Loaded"/>
+           <!-- <ListViewItem Content="MinBruger420" FontWeight="Black" Loaded="ListViewItem_Loaded"/> -->
 
         </ListView>
         <Button Style="{StaticResource LogUd}"/>
