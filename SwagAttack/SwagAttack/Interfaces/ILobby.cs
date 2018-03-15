@@ -8,6 +8,6 @@ namespace SwagAttack.Interfaces
         IReadOnlyCollection<IUser> UsersInLobby { get; }
         void AddUser(IUser user);
         void RemoveUser(IUser user);
-        void StartGame();
+        IGame StartGame();
     }
 }
