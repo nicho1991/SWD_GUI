@@ -7,12 +7,12 @@
     </Style>
 
     <Style TargetType="TextBox">
-        <Setter Property="Background" Value="DarkGray"></Setter>
+        <Setter Property="Background" Value="white"></Setter>
         <Setter Property="Margin" Value="5"></Setter>
         <Setter Property="HorizontalAlignment" Value="Stretch"></Setter>
         <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
         <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
-        <Setter Property="BorderBrush" Value="LightCoral"></Setter>
+        <Setter Property="BorderBrush" Value="Black"></Setter>
     </Style>
 
     <Style TargetType="PasswordBox">
@@ -22,6 +22,15 @@
         <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
         <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
         <Setter Property="BorderBrush" Value="LightCoral"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Control}">
+                    <Border Name="Border" BorderBrush="Black" Background="White" BorderThickness="1" CornerRadius="10">
+                        <ScrollViewer x:Name="PART_ContentHost" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
     </Style>
 
     <Style TargetType="TextBlock">
