@@ -10,9 +10,9 @@ using SwagAttack.Annotations;
 
 namespace SwagAttack.ViewModels
 {
-    class BaseViewModel<T> : ObservableCollection<T>, INotifyPropertyChanged
+    class BaseViewModel :  INotifyPropertyChanged
     {
-        public new event PropertyChangedEventHandler PropertyChanged;
+        public event PropertyChangedEventHandler PropertyChanged;
 
         [NotifyPropertyChangedInvocator]
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)

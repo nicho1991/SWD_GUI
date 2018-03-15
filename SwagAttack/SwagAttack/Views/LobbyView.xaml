@@ -19,8 +19,8 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <ListView x:Name="LobbyViewList" Margin="10,10,16,10" Grid.Row="2">
-            <ListViewItem Content="MinBruger420" FontWeight="Black"/>
+        <ListView x:Name="LobbyViewList" Margin="10,10,16,10" Grid.Row="2" Loaded="LobbyViewList_Loaded" >
+           <!-- <ListViewItem Content="MinBruger420" FontWeight="Black" Loaded="ListViewItem_Loaded"/> -->
 
         </ListView>
         <Button Style="{StaticResource LogUd}" x:Name="logud" Click="Logud_OnClick"/>
