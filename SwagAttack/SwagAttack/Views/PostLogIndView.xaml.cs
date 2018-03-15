@@ -25,9 +25,24 @@ namespace SwagAttack.Views
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Logud_OnClick(object sender, RoutedEventArgs e)
         {
+            NavigationService.Navigate(new Uri("Views/PreLogIndView.xaml", UriKind.Relative));
+        }
 
+        private void MineAktiveSpil_OnClick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("Views/AktiveSpilView.xaml", UriKind.Relative));
+        }
+
+        private void TilslutLobby_OnClick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("Views/LobbyView.xaml", UriKind.Relative));
+        }
+
+        private void OpretLobby_OnClick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("Views/OpretLobbyView.xaml", UriKind.Relative));
         }
     }
 }
