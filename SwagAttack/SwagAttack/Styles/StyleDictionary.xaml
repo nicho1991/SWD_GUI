@@ -3,6 +3,7 @@
                     xmlns:local="clr-namespace:SwagAttack">
 
     <Style TargetType="TextBox">
+
         <Setter Property="Background" Value="DarkGray"></Setter>
         <Setter Property="Margin" Value="5"></Setter>
         <Setter Property="HorizontalAlignment" Value="Stretch"></Setter>
@@ -26,6 +27,17 @@
     </Style>
 
     <Style  TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border BorderThickness="0"
+                            Background="{TemplateBinding Background}"
+                            CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
         <Setter Property="Background" Value="SaddleBrown"></Setter>
         <Setter Property="Foreground" Value="SandyBrown"></Setter>
         <Setter Property="Margin" Value="5"></Setter>
