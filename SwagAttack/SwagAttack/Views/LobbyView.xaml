@@ -8,9 +8,6 @@
       mc:Ignorable="d" 
       d:DesignHeight="420" d:DesignWidth="600"
       Title="LobbyView">
-    <Page.DataContext>
-        <viewModels:LobbyViewModel></viewModels:LobbyViewModel>
-    </Page.DataContext>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="50*"/>
