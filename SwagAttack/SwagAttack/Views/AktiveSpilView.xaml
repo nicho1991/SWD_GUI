@@ -19,7 +19,7 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button Background="LightCoral" MaxHeight="50" MaxWidth="150" FontSize="28" Foreground="DarkRed" FontWeight="Bold" Content="Log Ud"></Button>
+        <Button Style="{StaticResource LogUd}"></Button>
         <Button Grid.Column="3" Grid.Row="2" MaxHeight="75" MaxWidth="150" FontSize="24" Margin="4.6,5,5,4.6" Foreground="LawnGreen">Start Spil</Button>
         <Button Grid.Column="0" Grid.Row="2" MaxHeight="75" MaxWidth="150" FontSize="24" Foreground="Beige" Margin="5,5,5,4.6">Afbryd</Button>
     </Grid>
