@@ -30,25 +30,14 @@ namespace SwagAttack.Views
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         private void Button_Click(object sender, RoutedEventArgs e)
 =======
+=======
+
+>>>>>>> parent of c2c8846... fix
         private void LobbyViewList_Loaded(object sender, RoutedEventArgs e)
 >>>>>>> c2c8846164c6ec3432a5add83e61b5bcae7197ba
-        {
-            NavigationService.Navigate(new Uri("Views/PostLogIndView.xaml", UriKind.Relative));
-        }
-
-        private void Logud_OnClick(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Uri("Views/PostLogIndView.xaml", UriKind.Relative));
-        }
-
-        private void StartSpil_OnClick(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Uri("Views/PostLogIndView.xaml", UriKind.Relative));
-        }
-
-        private void Afbryd_OnClick(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Uri("Views/PostLogIndView.xaml", UriKind.Relative));
         }

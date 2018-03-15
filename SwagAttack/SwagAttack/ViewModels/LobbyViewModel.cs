@@ -11,7 +11,7 @@ using SwagAttack.Models;
 
 namespace SwagAttack.ViewModels
 {
-    class LobbyViewModel : BaseViewModel
+    class LobbyViewModel : BaseViewModel<ILobby>
     {
 
         public List<ILobby> LobbyListBind => LobbyList.lobbyList;

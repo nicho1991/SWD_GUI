@@ -7,7 +7,7 @@ using SwagAttack.Interfaces;
 
 namespace SwagAttack.ViewModels
 {
-    class GameViewModel : BaseViewModel
+    class GameViewModel : BaseViewModel<IGame>
     {
     }
 }
