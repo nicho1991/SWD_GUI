@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using SwagAttack.DAL;
+using SwagAttack.Models;
 
 namespace SwagAttack.Views
 {
@@ -22,13 +24,19 @@ namespace SwagAttack.Views
     {
         public LobbyView()
         {
+
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+
+        private void LobbyViewList_Loaded(object sender, RoutedEventArgs e)
         {
+            LobbyList.Add(new Lobby()); // just for test
 
+            foreach (var VARIABLE in LobbyList.lobbyList)
+            {
+                LobbyViewList.Items.Add(VARIABLE);
+            }
         }
-
     }
 }
