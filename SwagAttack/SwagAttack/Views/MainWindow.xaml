@@ -9,10 +9,11 @@
         Title="MainWindow" Height="420" Width="600">
     <Grid>
 
+
         <Grid.Background>
             <ImageBrush ImageSource="/SwagAttack;component/Ressources/swagAttackGreenACastle.png"/>
         </Grid.Background>
-        <Frame Name="MainFrame" Source="PostLogIndView.xaml">
+        <Frame Name="MainFrame" Source="LobbyView.xaml">
         </Frame>
     </Grid>
 </Window>
