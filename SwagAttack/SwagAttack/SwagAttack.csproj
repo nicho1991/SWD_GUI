@@ -54,6 +54,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Models\Game.cs" />
+    <Compile Include="Models\Lobby.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="ViewModels\empty.cs" />
     <Page Include="Views\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -73,7 +76,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\empty.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
