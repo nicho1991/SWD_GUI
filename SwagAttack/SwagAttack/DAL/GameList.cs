@@ -32,5 +32,12 @@ namespace SwagAttack.DAL
 
             return tempList;
         }
+
+        static void Remove(Game game)
+        {
+            GamesList.Remove(game);
+        }
+
+
     }
 }

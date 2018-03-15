@@ -38,6 +38,14 @@
         <Setter Property="HorizontalAlignment" Value="Stretch"></Setter>
     </Style>
 
+    <Style  TargetType="ListView">
+        <Setter Property="Background" Value="SaddleBrown"></Setter>
+        <Setter Property="Foreground" Value="SandyBrown"></Setter>
+        <Setter Property="Margin" Value="1"></Setter>
+        <Setter Property="BorderBrush" Value="LightCoral"></Setter>
+    </Style>
+
+
     <Style  TargetType="Button">
         <Setter Property="Background" Value="SaddleBrown"></Setter>
         <Setter Property="Foreground" Value="SandyBrown"></Setter>
