@@ -24,12 +24,15 @@ namespace SwagAttack.Views
     {
         public LobbyView()
         {
+
             InitializeComponent();
         }
 
-        private void ListViewItem_Loaded(object sender, RoutedEventArgs e)
+
+        private void LobbyViewList_Loaded(object sender, RoutedEventArgs e)
         {
-            LobbyList.Add(new Lobby());
+            LobbyList.Add(new Lobby()); // just for test
+
             foreach (var VARIABLE in LobbyList.lobbyList)
             {
                 LobbyViewList.Items.Add(VARIABLE);
