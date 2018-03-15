@@ -20,7 +20,7 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
 
-        <Button Background="LightCoral" MaxHeight="50" MaxWidth="150" FontSize="28" Foreground="DarkRed" FontWeight="Bold" Content="Log Ud"></Button>
+        <Button Style="{StaticResource LogUd}"></Button>
 
         <StackPanel Grid.Column="1" Grid.Row="2">
             <Button >Mine Aktive Spil</Button>
