@@ -21,7 +21,7 @@
             <RowDefinition Height="208*"></RowDefinition>
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="2" Grid.Column="1" VerticalAlignment="Center">
-            <TextBox Name="UsernameInput">Brugernavn</TextBox>
+            <TextBox Name="UsernameInput" Margin="0,5">Brugernavn</TextBox>
             <PasswordBox Name="PasswordInput"></PasswordBox>
             <Button x:Name="Login" Click="Login_OnClick">Log Ind</Button>
             <Button x:Name="OpretKont" Click="OpretKont_OnClick">Opret Konto</Button>
