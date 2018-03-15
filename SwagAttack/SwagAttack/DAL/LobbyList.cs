@@ -18,5 +18,10 @@ namespace SwagAttack.DAL
 
         static List<Lobby> Getlist => lobbyList;
 
+        static void Remove(Lobby lobby)
+        {
+            lobbyList.Remove(lobby);
+        }
+
     }
 }
