@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using SwagAttack.DAL;
+using SwagAttack.Models;
 
 namespace SwagAttack.Views
 {
@@ -38,6 +40,16 @@ namespace SwagAttack.Views
         private void Logud_OnClick(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Uri("Views/PreLogIndView.xaml", UriKind.Relative));
+        }
+
+        private void GameViewList_OnLoadedViewList_Loaded(object sender, RoutedEventArgs e)
+        {
+            GameList.Add(new Game()); // just for test
+
+            foreach (var VARIABLE in GameList.GamesList)
+            {
+                GameViewList.Items.Add(VARIABLE);
+            }
         }
     }
 }
