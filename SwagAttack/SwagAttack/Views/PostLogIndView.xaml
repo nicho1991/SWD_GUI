@@ -7,10 +7,23 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="PostLogIndView">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
 
-    <StackPanel>
-        <Button>Mine Aktive Spil</Button>
-        <Button>Tilslut Lobby</Button>
-        <Button>Opret Lobby</Button>
-    </StackPanel>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Column="1" Grid.Row="2">
+            <Button >Mine Aktive Spil</Button>
+            <Button>Tilslut Lobby</Button>
+            <Button>Opret Lobby</Button>
+        </StackPanel>
+    </Grid>
+
 </Page>

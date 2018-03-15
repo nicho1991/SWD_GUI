@@ -8,22 +8,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="420" Width="600">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-        </Grid.RowDefinitions>
+
 
         <Grid.Background>
             <ImageBrush ImageSource="/SwagAttack;component/Ressources/swagAttackGreenACastle.png"/>
         </Grid.Background>
-        <Frame Grid.RowSpan="2" Grid.Row="2" Grid.Column="1" Name="MainFrame" Source="PreLogIndView.xaml">
+        <Frame Name="MainFrame" Source="OpreKontoView.xaml">
         </Frame>
     </Grid>
 </Window>
