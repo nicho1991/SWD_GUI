@@ -4,9 +4,14 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SwagAttack"
+        xmlns:views="clr-namespace:SwagAttack.Views"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="420" Width="600">
     <Grid>
-        
+        <Grid.Background>
+            <ImageBrush ImageSource="/SwagAttack;component/Ressources/swagAttackGreenACastle.png"/>
+        </Grid.Background>
+        <Frame Name="MainFrame" Source="PreLogIndView.xaml">
+        </Frame>
     </Grid>
 </Window>
