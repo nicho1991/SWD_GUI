@@ -35,7 +35,17 @@ namespace SwagAttack.ViewModels
             Add(user);
         }
 
-        private ICommand _createLobbyCommand;
+        private ICommand _joinLobbyCommand;
+        public ICommand JoinLobbyCommand => _joinLobbyCommand ?? (_joinLobbyCommand = new RelayCommand<ILobby>(JoinLobby_Execute));
+
+        private void JoinLobby_Execute(ILobby lob)
+        {
+            
+         
+        }
+
+
+
 
     }
 }
