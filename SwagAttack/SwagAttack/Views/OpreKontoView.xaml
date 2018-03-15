@@ -28,7 +28,7 @@
 
             <TextBlock FontSize="13" FontWeight="ExtraBold" Text="Brugernavn:">
                 <TextBlock.Background>
-                    <SolidColorBrush Color="LawnGreen" Opacity="0.3"></SolidColorBrush>
+                    <SolidColorBrush Color="Green" Opacity="0.3"></SolidColorBrush>
                 </TextBlock.Background>
             </TextBlock>
             <TextBlock FontSize="13" FontWeight="ExtraBold" Text="E-mail">
