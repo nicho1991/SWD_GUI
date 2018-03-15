@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:SwagAttack"
         xmlns:views="clr-namespace:SwagAttack.Views"
         mc:Ignorable="d"
-        Title="MainWindow" Height="720" Width="1080" MinHeight="420" MinWidth="630">
+        Title="SwagAttack - Det sygeste spil i verden!" Height="720" Width="1080" MinHeight="420" MinWidth="630" Icon="/SwagAttack;component/Ressources/SWAGLOGO2.jpg">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="/SwagAttack;component/Ressources/swagAttackGreenACastle.png"/>

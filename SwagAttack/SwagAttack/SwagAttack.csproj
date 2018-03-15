@@ -152,5 +152,8 @@
   <ItemGroup>
     <Resource Include="Ressources\swagAttackGreenACastle.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ressources\SWAGLOGO2.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
