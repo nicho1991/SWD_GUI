@@ -3,20 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SwagAttack.Interfaces;
 using SwagAttack.Models;
 
 namespace SwagAttack.DAL
 {
-    static class LobbyList
+    public static class LobbyList
     {
-        internal static List<Lobby> lobbyList = new List<Lobby>();
+        internal static List<ILobby> lobbyList = new List<ILobby>();
 
-        static void Add(Lobby lobby)
+        public static void Add(ILobby lobby)
         {
             lobbyList.Add(lobby);
         }
 
-        static List<Lobby> Getlist => lobbyList;
+        static List<ILobby> Getlist => lobbyList;
 
     }
 }

@@ -3,36 +3,42 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using SwagAttack.Interfaces;
 using SwagAttack.Models;
 
 namespace SwagAttack.DAL
 {
-    static class UserList
+    public static class UserList
     {
-        static List<User> userList = new List<User>();
+        static List<IUser> listOfUsers = new List<IUser>();
 
-        static bool Add(User user)
+        public static bool Add(IUser user)
         {
-            if (!userList.Contains(user)) { 
-                userList.Add(user);
+            if (!listOfUsers.Contains(user)) { 
+                listOfUsers.Add(user);
                 return true;
             }
             return false;
         }
 
-        static bool validataUser(User user)
+        public static bool ValidataUser(IUser user)
         {
-            if (!userList.Contains(user))
+            if (!listOfUsers.Contains(user))
             {
                 return true;
             }
             return false;
         }
 
-        static void Remove(User user)
+        public static void Remove(IUser user)
         {
-            userList.Remove(user);
+            listOfUsers.Remove(user);
+        }
+
+        public static IUser FindUser(string username)
+        {
+            var user = listOfUsers.Find(u => u.Username == username);
+            return user;
         }
 
     }
