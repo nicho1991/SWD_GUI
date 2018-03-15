@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SwagAttack.Models
 {
-    class empty
+    public class User
     {
     }
 }
