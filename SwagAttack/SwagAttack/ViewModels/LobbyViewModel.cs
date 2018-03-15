@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SwagAttack.ViewModels
 {
-    class empty
+    class LobbyViewModel : BaseViewModel
     {
     }
 }
