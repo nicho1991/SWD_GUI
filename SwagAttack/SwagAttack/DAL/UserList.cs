@@ -30,5 +30,10 @@ namespace SwagAttack.DAL
             return false;
         }
 
+        static void Remove(User user)
+        {
+            userList.Remove(user);
+        }
+
     }
 }
