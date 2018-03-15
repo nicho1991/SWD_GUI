@@ -8,7 +8,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Frame Source="PreLogIndView.xaml">
+        <Grid.Background>
+            <ImageBrush ImageSource="/SwagAttack;component/Ressources/swagAttackGreenACastle.png"/>
+        </Grid.Background>
+        <Frame Name="MainFrame" Source="PreLogIndView.xaml">
         </Frame>
     </Grid>
 </Window>
