@@ -54,6 +54,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DAL\GameList.cs" />
+    <Compile Include="DAL\LobbyList.cs" />
+    <Compile Include="DAL\UserList.cs" />
     <Compile Include="Interfaces\IGame.cs" />
     <Compile Include="Interfaces\ILobby.cs" />
     <Compile Include="Interfaces\IUser.cs" />

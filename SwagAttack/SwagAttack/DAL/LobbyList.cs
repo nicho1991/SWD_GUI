@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SwagAttack.DAL
 {
-    class LobbyList
+    static class LobbyList
     {
     }
 }
