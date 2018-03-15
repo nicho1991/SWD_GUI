@@ -40,7 +40,7 @@ namespace SwagAttack.Views
 
         private void Logud_OnClick(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("Views/PostLogIndView.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("Views/PreLogIndView.xaml", UriKind.Relative));
         }
 
         private void StartSpil_OnClick(object sender, RoutedEventArgs e)
