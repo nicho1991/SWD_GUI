@@ -37,7 +37,7 @@
         <Setter Property="HorizontalAlignment" Value="Stretch"></Setter>
     </Style>
 
-    <Style  TargetType="Button" x:Key="BasicButton">
+    <Style  TargetType="Button" >
 
         <Setter Property="Background" Value="SaddleBrown"></Setter>
         <Setter Property="Foreground" Value="SandyBrown"></Setter>
@@ -45,7 +45,7 @@
         <Setter Property="BorderBrush" Value="LightCoral"></Setter>
     </Style>
     
-    <Style TargetType="Button" BasedOn="{StaticResource BasicButton}" x:Key="LogUd">
+    <Style TargetType="Button" x:Key="LogUd">
         <Setter Property="Background" Value="LightCoral"></Setter>
         <Setter Property="MaxHeight" Value="50"></Setter>
         <Setter Property="MaxWidth" Value="150"></Setter>
@@ -53,6 +53,8 @@
         <Setter Property="Foreground" Value="DarkRed"></Setter>
         <Setter Property="FontWeight" Value="Bold"></Setter>
         <Setter Property="Content" Value="Log ud"></Setter>
+        <Setter Property="Margin" Value="5"></Setter>
+        <Setter Property="BorderBrush" Value="LightCoral"></Setter>
     </Style>
 
 </ResourceDictionary>
