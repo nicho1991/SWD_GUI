@@ -23,6 +23,7 @@ namespace SwagAttack
         public MainWindow()
         {
             InitializeComponent();
+            
         }
     }
 }

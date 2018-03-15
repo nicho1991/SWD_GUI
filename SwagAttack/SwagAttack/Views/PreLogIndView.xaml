@@ -23,8 +23,8 @@
         <StackPanel Grid.Row="2" Grid.Column="1" VerticalAlignment="Center">
             <TextBox>Brugernavn</TextBox>
             <PasswordBox></PasswordBox>
-            <Button>Log Ind</Button>
-            <Button>Opret Konto</Button>
+            <Button x:Name="Login" Click="Login_OnClick">Log Ind</Button>
+            <Button x:Name="OpretKont" Click="OpretKont_OnClick">Opret Konto</Button>
         </StackPanel>
     </Grid>
 
