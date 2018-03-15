@@ -27,12 +27,12 @@ namespace SwagAttack.Views
 
         private void Login_OnClick(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("Views/PostLogIndView.xaml", UriKind.Relative));
+            NavigationService?.Navigate(new Uri("Views/PostLogIndView.xaml", UriKind.Relative));
         }
 
         private void OpretKont_OnClick(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("Views/OpreKontoView.xaml", UriKind.Relative));
+            NavigationService?.Navigate(new Uri("Views/OpreKontoView.xaml", UriKind.Relative));
         }
     }
 }
