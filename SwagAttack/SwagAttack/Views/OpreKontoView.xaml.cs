@@ -21,7 +21,7 @@ namespace SwagAttack.Views
     public partial class OpreKontoView : Page
     {
         public OpreKontoView()
-        {
+        { 
             InitializeComponent();
         }
 
