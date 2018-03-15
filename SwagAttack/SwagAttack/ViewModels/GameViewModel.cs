@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SwagAttack.Interfaces;
 
 namespace SwagAttack.ViewModels
 {
-    class GameViewModel : BaseViewModel
+    class GameViewModel : BaseViewModel<IGame>
     {
     }
 }
