@@ -9,6 +9,6 @@
       Title="PreLogIndView">
 
     <Grid>
-        <TextBlock FontSize="200">HEJ</TextBlock>
+        <TextBlock>HEJ</TextBlock>
     </Grid>
 </Page>
