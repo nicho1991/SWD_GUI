@@ -19,7 +19,7 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <ListView Margin="10,10,16,10" Grid.Row="2">
+        <ListView x:Name="LobbyViewList" Margin="10,10,16,10" Grid.Row="2">
             <ListViewItem Content="MinBruger420" FontWeight="Black"/>
 
         </ListView>
