@@ -26,16 +26,16 @@ namespace SwagAttack.Views
         {
 
             InitializeComponent();
+            LobbyList.Add(new Lobby());
         }
 
+<<<<<<< HEAD
+        private void Button_Click(object sender, RoutedEventArgs e)
+=======
         private void LobbyViewList_Loaded(object sender, RoutedEventArgs e)
+>>>>>>> c2c8846164c6ec3432a5add83e61b5bcae7197ba
         {
-            LobbyList.Add(new Lobby()); // just for test
-
-            foreach (var VARIABLE in LobbyList.lobbyList)
-            {
-                LobbyViewList.Items.Add(VARIABLE);
-            }
+            NavigationService.Navigate(new Uri("Views/PostLogIndView.xaml", UriKind.Relative));
         }
 
         private void Logud_OnClick(object sender, RoutedEventArgs e)

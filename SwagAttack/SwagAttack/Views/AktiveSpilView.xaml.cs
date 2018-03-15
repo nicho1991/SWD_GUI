@@ -24,20 +24,5 @@ namespace SwagAttack.Views
         {
             InitializeComponent();
         }
-
-        private void StartSpil_OnClick(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Uri("Views/PostLogIndView.xaml", UriKind.Relative));
-        }
-
-        private void Afbryd_OnClick(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Uri("Views/PostLogIndView.xaml", UriKind.Relative));
-        }
-
-        private void Logud_OnClick(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Uri("Views/PreLogIndView.xaml", UriKind.Relative));
-        }
     }
 }

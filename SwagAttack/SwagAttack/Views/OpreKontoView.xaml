@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:SwagAttack.Views"
       mc:Ignorable="d" 
-      d:DesignHeight="420" d:DesignWidth="600"
+      d:DesignHeight="450" d:DesignWidth="800"
       Title="OpreKontoView">
 
     <Grid>
@@ -22,8 +22,8 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
 
-        <Button Padding="-10" Grid.Column="3" Grid.Row="2" MaxHeight="75" MaxWidth="150" FontSize="24" Margin="4.6,5,5,4.6" x:Name="opretKonto" Click="OpretKonto_OnClick">Opret Konto</Button>
-        <Button Grid.Column="0" Grid.Row="2" MaxHeight="75" MaxWidth="150" FontSize="24" Foreground="Beige" Margin="5,5,5,4.6" x:Name="Afbryd" Click="Afbryd_OnClick">Afbryd</Button>
+        <Button Grid.Column="3" Grid.Row="2" MaxHeight="75" MaxWidth="150" FontSize="24" Margin="4.6,5,5,4.6">Opret Konto</Button>
+        <Button Grid.Column="0" Grid.Row="2" MaxHeight="75" MaxWidth="150" FontSize="24" Foreground="Beige" Margin="5,5,5,4.6">Afbryd</Button>
         <StackPanel Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Stretch">
 
             <TextBlock FontSize="13" FontWeight="ExtraBold" Text="Brugernavn:">
