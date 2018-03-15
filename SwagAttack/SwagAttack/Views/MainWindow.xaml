@@ -6,9 +6,8 @@
         xmlns:local="clr-namespace:SwagAttack"
         xmlns:views="clr-namespace:SwagAttack.Views"
         mc:Ignorable="d"
-        Title="MainWindow" Height="420" Width="600">
+        Title="MainWindow" Height="720" Width="1080">
     <Grid>
-
         <Grid.Background>
             <ImageBrush ImageSource="/SwagAttack;component/Ressources/swagAttackGreenACastle.png"/>
         </Grid.Background>
