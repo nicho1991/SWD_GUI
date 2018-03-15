@@ -60,6 +60,7 @@
     <Compile Include="Models\Game.cs" />
     <Compile Include="Models\Lobby.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="Properties\Annotations1.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Page Include="Views\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
