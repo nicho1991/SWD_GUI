@@ -7,7 +7,7 @@ using SwagAttack.Interfaces;
 
 namespace SwagAttack.ViewModels
 {
-    class LobbyViewModel : BaseViewModel<ILobby>
+    class LobbyViewModel : BaseViewModel
     {
 
     }

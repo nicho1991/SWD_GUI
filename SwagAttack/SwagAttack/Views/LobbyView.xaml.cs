@@ -28,7 +28,6 @@ namespace SwagAttack.Views
             InitializeComponent();
         }
 
-
         private void LobbyViewList_Loaded(object sender, RoutedEventArgs e)
         {
             LobbyList.Add(new Lobby()); // just for test
@@ -37,6 +36,21 @@ namespace SwagAttack.Views
             {
                 LobbyViewList.Items.Add(VARIABLE);
             }
+        }
+
+        private void Logud_OnClick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("Views/PostLogIndView.xaml", UriKind.Relative));
+        }
+
+        private void StartSpil_OnClick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("Views/PostLogIndView.xaml", UriKind.Relative));
+        }
+
+        private void Afbryd_OnClick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("Views/PostLogIndView.xaml", UriKind.Relative));
         }
     }
 }
