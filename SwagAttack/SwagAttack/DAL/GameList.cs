@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace SwagAttack.DAL
 {
-    class GameList
+    static class GameList
     {
+
     }
 }
