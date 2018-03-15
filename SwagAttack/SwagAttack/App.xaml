@@ -4,6 +4,8 @@
              xmlns:local="clr-namespace:SwagAttack"
              StartupUri="Views/MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary.MergedDictionaries>
+            <ResourceDictionary Source="Styles/StyleDictionary.xaml"></ResourceDictionary>
+        </ResourceDictionary.MergedDictionaries>
     </Application.Resources>
 </Application>
