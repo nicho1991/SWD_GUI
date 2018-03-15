@@ -42,7 +42,7 @@ namespace SwagAttack.Views
 
         private void OpretLobby_OnClick(object sender, RoutedEventArgs e)
         {
-           //penis
+            NavigationService.Navigate(new Uri("Views/OpretLobbyView.xaml", UriKind.Relative));
         }
     }
 }

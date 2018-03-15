@@ -22,8 +22,13 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
 
+<<<<<<< HEAD
         <Button Grid.Column="3" Grid.Row="2" MaxHeight="75" MaxWidth="150" FontSize="24" Margin="4.6,5,5,4.6">Opret Konto</Button>
         <Button Grid.Column="0" Grid.Row="2" MaxHeight="75" MaxWidth="150" FontSize="24" Foreground="Beige" Margin="5,5,5,4.6">Afbryd</Button>
+=======
+        <Button Grid.Column="3" Grid.Row="2" MaxHeight="75" MaxWidth="150" FontSize="24" Margin="4.6,5,5,4.6" Click="Button_Click_1">Opret Konto</Button>
+        <Button Grid.Column="0" Grid.Row="2" MaxHeight="75" MaxWidth="150" FontSize="24" Foreground="Beige" Margin="5,5,5,4.6" Click="Button_Click">Afbryd</Button>
+>>>>>>> parent of 08fabcd... gergerfre
         <StackPanel Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Stretch">
 
             <TextBlock FontSize="13" FontWeight="ExtraBold" Text="Brugernavn:">
