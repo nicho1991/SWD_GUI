@@ -25,7 +25,7 @@ namespace SwagAttack.Views
         public LobbyView()
         {
 
-            InitializeComponent();
+            InitializeComponent();  
         }
 
         private void LobbyViewList_Loaded(object sender, RoutedEventArgs e)
