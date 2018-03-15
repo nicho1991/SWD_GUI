@@ -20,7 +20,7 @@
             <RowDefinition Height="91*"></RowDefinition>
             <RowDefinition Height="208*"></RowDefinition>
         </Grid.RowDefinitions>
-        <StackPanel Grid.Row="2" Grid.Column="1" >
+        <StackPanel Grid.Row="2" Grid.Column="1" VerticalAlignment="Center">
             <TextBox>Brugernavn</TextBox>
             <PasswordBox></PasswordBox>
             <Button>Log Ind</Button>

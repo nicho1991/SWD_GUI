@@ -39,7 +39,6 @@
     </Style>
 
     <Style  TargetType="Button">
-
         <Setter Property="Background" Value="SaddleBrown"></Setter>
         <Setter Property="Foreground" Value="SandyBrown"></Setter>
         <Setter Property="Margin" Value="1"></Setter>
@@ -52,6 +51,8 @@
         <Setter Property="Foreground" Value="DarkRed"></Setter>
         <Setter Property="FontWeight" Value="Bold"></Setter>
         <Setter Property="Content" Value="Log ud"></Setter>
+        <Setter Property="VerticalAlignment" Value="Top"></Setter>
+        <Setter Property="HorizontalAlignment" Value="Left"></Setter>
         <Setter Property="VerticalAlignment" Value="Top"></Setter>
 
     </Style>

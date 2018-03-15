@@ -24,7 +24,7 @@
 
         <StackPanel Grid.Column="1" Grid.Row="2" VerticalAlignment="Center">
             <Button >Mine Aktive Spil</Button>
-            <Button>Tilslut Lobby</Button>
+            <Button >Tilslut Lobby</Button>
             <Button>Opret Lobby</Button>
         </StackPanel>
     </Grid>
