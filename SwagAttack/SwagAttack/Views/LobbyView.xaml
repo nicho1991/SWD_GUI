@@ -10,24 +10,31 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="30*"/>
+            <RowDefinition Height="50*"/>
             <RowDefinition Height="23*"/>
-            <RowDefinition Height="37*"/>
+            <RowDefinition Height="77*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <ListView HorizontalAlignment="Left" Height="165" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="257">
-            <ListView Margin="0" x:Name="LvUsers" Width="237">
+        <ListView HorizontalAlignment="Left" Height="231" Margin="0" Grid.Row="2" VerticalAlignment="Top" Width="267">
+            <ListView Margin="0" x:Name="LvUsers" Width="257" Height="30">
                 <ListView.View>
                     <GridView>
                         <GridViewColumn Header="Brugere i lobby"/>
                     </GridView>
                 </ListView.View>
             </ListView>
+            <ListViewItem Content="MitSpil420" FontWeight="Black"/>
 
         </ListView>
+        <Button Background="LightCoral" MaxHeight="50" MaxWidth="150" FontSize="28" Foreground="DarkRed" FontWeight="Bold" Content="Log Ud"></Button>
+        <StackPanel Grid.Column="1" Grid.Row="2">
+            <Button Grid.Column="2" Grid.Row="2" MaxHeight="75" MaxWidth="150" FontSize="24" Margin="4.6,5,5,4.6" Foreground="LawnGreen">Start Spil</Button>
+            <Button Grid.Column="1" Grid.Row="2" MaxHeight="75" MaxWidth="150" FontSize="24" Foreground="Beige" Margin="5,5,5,4.6">Afbryd</Button>
+        </StackPanel>
+        
     </Grid>
 </Page>
