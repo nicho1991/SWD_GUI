@@ -24,19 +24,31 @@
 
         <Button Grid.Column="3" Grid.Row="2" MaxHeight="75" MaxWidth="150" FontSize="24" Margin="4.6,5,5,4.6">Opret Konto</Button>
         <Button Grid.Column="0" Grid.Row="2" MaxHeight="75" MaxWidth="150" FontSize="24" Foreground="Beige" Margin="5,5,5,4.6">Afbryd</Button>
-        <StackPanel Grid.Column="1" Grid.Row="2" Margin="0,36,169.4,-0.4" Grid.ColumnSpan="2">
+        <StackPanel Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Stretch">
 
-            <TextBlock FontSize="13" FontWeight="ExtraBold" >Brugernavn:</TextBlock>
-            <TextBlock FontSize="13" FontWeight="ExtraBold">E-mail:</TextBlock>
-            <TextBlock FontSize="13" FontWeight="ExtraBold">Adgangskode:</TextBlock>
+            <TextBlock FontSize="13" FontWeight="ExtraBold" Text="Brugernavn:">
+                <TextBlock.Background>
+                    <SolidColorBrush Color="LawnGreen" Opacity="0.3"></SolidColorBrush>
+                </TextBlock.Background>
+            </TextBlock>
+            <TextBlock FontSize="13" FontWeight="ExtraBold" Text="E-mail">
+                <TextBlock.Background>
+                    <SolidColorBrush Color="LawnGreen" Opacity="0.3"></SolidColorBrush>
+                </TextBlock.Background>
+            </TextBlock>
+
+            <TextBlock FontSize="13" FontWeight="ExtraBold" Text="Adgangskode">
+                <TextBlock.Background>
+                    <SolidColorBrush Color="LawnGreen" Opacity="0.3"></SolidColorBrush>
+                </TextBlock.Background>
+            </TextBlock>
         </StackPanel>
 
-        <StackPanel Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="2" Margin="1.2,36,207,-0.4">
+        <StackPanel Grid.Column="2" Grid.Row="2"  VerticalAlignment="Center">
             <TextBox ></TextBox>
             <TextBox ></TextBox>
             <PasswordBox></PasswordBox>
         </StackPanel>
-
 
     </Grid>
 </Page>
