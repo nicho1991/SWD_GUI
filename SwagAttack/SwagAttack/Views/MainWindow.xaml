@@ -13,7 +13,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="/SwagAttack;component/Ressources/swagAttackGreenACastle.png"/>
         </Grid.Background>
-        <Frame Name="MainFrame" Source="LobbyView.xaml">
+        <Frame Name="MainFrame" Source="AktiveSpilView.xaml">
         </Frame>
     </Grid>
 </Window>
