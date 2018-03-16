@@ -66,6 +66,7 @@
     <Compile Include="Properties\Annotations1.cs" />
     <Compile Include="RelayCommand.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="ViewModels\NavigationViewModel.cs" />
     <Compile Include="Views\AktiveSpilView.xaml.cs">
       <DependentUpon>AktiveSpilView.xaml</DependentUpon>
     </Compile>
