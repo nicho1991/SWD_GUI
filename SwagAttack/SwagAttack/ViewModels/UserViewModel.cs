@@ -13,7 +13,7 @@ namespace SwagAttack.ViewModels
 {
     public class UserViewModel : BaseViewModel
     {
-        private IUser _user = null;
+        public IUser User = null;
 
         private ICommand _createUserCommand;
         public ICommand CreateUserCommand =>
@@ -28,7 +28,11 @@ namespace SwagAttack.ViewModels
             };
 
             if (UserList.Add(user))
-                _user = user;
+            {
+                User = user;
+                OnPropertyChanged("User");
+            }
+                
         }
 
         private bool CreateUser_CanExecute()
@@ -44,7 +48,8 @@ namespace SwagAttack.ViewModels
                     var user = UserList.FindUser(Username);
                     if (user?.Password == Password)
                     {
-                        _user = user;
+                        User = user;
+                        OnPropertyChanged("User");
                     }
                 },
                 () => 
@@ -56,10 +61,10 @@ namespace SwagAttack.ViewModels
             _createLobbyCommand ?? (_createLobbyCommand = new RelayCommand(
                 () =>
                 {
-                    var lobby = _user.CreateLobby();
+                    var lobby = User.CreateLobby();
                     LobbyList.Add(lobby);
                 },
-                () => _user != null));
+                () => User != null));
 
         #region Properties
 
