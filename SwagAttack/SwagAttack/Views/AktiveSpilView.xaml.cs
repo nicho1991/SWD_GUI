@@ -20,7 +20,7 @@ namespace SwagAttack.Views
     /// <summary>
     /// Interaction logic for AktiveSpilView.xaml
     /// </summary>
-    public partial class AktiveSpilView : Page
+    public partial class AktiveSpilView : UserControl
     {
         public AktiveSpilView()
         {
@@ -29,27 +29,22 @@ namespace SwagAttack.Views
 
         private void StartSpil_OnClick(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("Views/PostLogIndView.xaml", UriKind.Relative));
+            //NavigationService.Navigate(new Uri("Views/PostLogIndView.xaml", UriKind.Relative));
         }
 
         private void Afbryd_OnClick(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("Views/PostLogIndView.xaml", UriKind.Relative));
+            //NavigationService.Navigate(new Uri("Views/PostLogIndView.xaml", UriKind.Relative));
         }
 
         private void Logud_OnClick(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("Views/PreLogIndView.xaml", UriKind.Relative));
+            //NavigationService.Navigate(new Uri("Views/PreLogIndView.xaml", UriKind.Relative));
         }
 
         private void GameViewList_OnLoadedViewList_Loaded(object sender, RoutedEventArgs e)
         {
-            GameList.Add(new Game()); // just for test
 
-            foreach (var VARIABLE in GameList.GamesList)
-            {
-                GameViewList.Items.Add(VARIABLE);
-            }
         }
     }
 }

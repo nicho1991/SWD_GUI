@@ -8,7 +8,7 @@ using SwagAttack.Interfaces;
 
 namespace SwagAttack.ViewModels
 {
-    class GameViewModel
+    public class GameViewModel
     {
         public List<IGame> GameListBind => GameList.GamesList;
 
