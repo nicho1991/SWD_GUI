@@ -11,12 +11,11 @@ using SwagAttack.Models;
 
 namespace SwagAttack.ViewModels
 {
-    class LobbyViewModel
+    public class LobbyViewModel : BaseViewModel
     {
-
         public List<ILobby> LobbyListBind => LobbyList.lobbyList;
 
-        
+        public IReadOnlyCollection<IUser> Users
     }
 
 }

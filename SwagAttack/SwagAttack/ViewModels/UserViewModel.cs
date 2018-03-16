@@ -11,7 +11,7 @@ using SwagAttack.Models;
 
 namespace SwagAttack.ViewModels
 {
-    class UserViewModel : BaseViewModel
+    public class UserViewModel : BaseViewModel
     {
         private IUser _user = null;
 
