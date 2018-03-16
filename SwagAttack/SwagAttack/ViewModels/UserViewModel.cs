@@ -15,6 +15,14 @@ namespace SwagAttack.ViewModels
     {
         public IUser User = null;
 
+        public string ddddT = "11";
+
+        public string UserBind
+        {
+            get { return ddddT; }
+            set { ddddT = value; }
+        }
+
         private ICommand _createUserCommand;
         public ICommand CreateUserCommand =>
             _createUserCommand ?? (_createUserCommand = new RelayCommand(CreateUser_Execute, CreateUser_CanExecute));

@@ -7,15 +7,32 @@
         xmlns:views="clr-namespace:SwagAttack.Views"
         xmlns:viewmodels="clr-namespace:SwagAttack.ViewModels"
         xmlns:cal="http://www.caliburnproject.org"
+        xmlns:models="clr-namespace:SwagAttack.Models"
         mc:Ignorable="d"
         Title="SwagAttack - Det sygeste spil i verden!" Height="720" Width="1080" MinHeight="420" MinWidth="630" Icon="/SwagAttack;component/Ressources/SWAGLOGO2.jpg">
+
     <Window.Resources>
-        <DataTemplate DataType="{ x:Type viewmodels:UserViewModel}">
-            <views:PreLogIndView></views:PreLogIndView>
+        <DataTemplate x:Key="preLogInd" DataType="{x:Type viewmodels:UserViewModel}">
+            <views:PreLogIndView ></views:PreLogIndView>
         </DataTemplate>
-      
-        </Window.Resources>
-    
+        <DataTemplate x:Key="postLogInd" DataType="{x:Type viewmodels:UserViewModel}">
+            <views:PostLogIndView ></views:PostLogIndView>
+        </DataTemplate> 
+
+        <DataTemplate  DataType="{x:Type viewmodels:UserViewModel}">
+            <ContentPresenter x:Name="Presenter"></ContentPresenter>
+            <DataTemplate.Triggers>
+                <DataTrigger Binding="{Binding UserBind}" Value="11">
+                    <Setter TargetName="Presenter" Property="ContentTemplate" Value="{StaticResource preLogInd}"></Setter>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding UserBind}" Value="22">
+                    <Setter TargetName="Presenter" Property="ContentTemplate" Value="{StaticResource postLogInd}"></Setter>
+                </DataTrigger>
+            </DataTemplate.Triggers>
+        </DataTemplate>
+
+    </Window.Resources>
+
     <Window.DataContext>
         <viewmodels:UserViewModel/>
     </Window.DataContext>
@@ -24,6 +41,6 @@
         <Grid.Background>
             <ImageBrush ImageSource="/SwagAttack;component/Ressources/swagAttackGreenACastle.png"/>
         </Grid.Background>
-        <ContentControl Content="{Binding}"></ContentControl>
+        <ContentPresenter Content="{Binding}"></ContentPresenter>
     </Grid>
 </Window>

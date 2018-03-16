@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using SwagAttack.DAL;
+using SwagAttack.Models;
+using SwagAttack.ViewModels;
 
 namespace SwagAttack.Views
 {
@@ -27,6 +30,7 @@ namespace SwagAttack.Views
 
         private void Login_OnClick(object sender, RoutedEventArgs e)
         {
+
             //NavigationService?.Navigate(new Uri("Views/PostLogIndView.xaml", UriKind.Relative));
         }
 
