@@ -18,7 +18,7 @@ namespace SwagAttack.Views
     /// <summary>
     /// Interaction logic for PostLogIndView.xaml
     /// </summary>
-    public partial class PostLogIndView : Page
+    public partial class PostLogIndView : UserControl
     {
         public PostLogIndView()
         {
@@ -27,17 +27,17 @@ namespace SwagAttack.Views
 
         private void Logud_OnClick(object sender, RoutedEventArgs e)
         {
-            NavigationService?.Navigate(new Uri("Views/PreLogIndView.xaml", UriKind.Relative));
+            //NavigationService?.Navigate(new Uri("Views/PreLogIndView.xaml", UriKind.Relative));
         }
 
         private void MineAktiveSpil_OnClick(object sender, RoutedEventArgs e)
         {
-            NavigationService?.Navigate(new Uri("Views/AktiveSpilView.xaml", UriKind.Relative));
+            //NavigationService?.Navigate(new Uri("Views/AktiveSpilView.xaml", UriKind.Relative));
         }
 
         private void TilslutLobby_OnClick(object sender, RoutedEventArgs e)
         {
-            NavigationService?.Navigate(new Uri("Views/LobbyView.xaml", UriKind.Relative));
+           // NavigationService?.Navigate(new Uri("Views/LobbyView.xaml", UriKind.Relative));
         }
 
         private void OpretLobby_OnClick(object sender, RoutedEventArgs e)
