@@ -44,12 +44,7 @@ namespace SwagAttack.Views
 
         private void GameViewList_OnLoadedViewList_Loaded(object sender, RoutedEventArgs e)
         {
-            GameList.Add(new Game()); // just for test
 
-            foreach (var VARIABLE in GameList.GamesList)
-            {
-                GameViewList.Items.Add(VARIABLE);
-            }
         }
     }
 }

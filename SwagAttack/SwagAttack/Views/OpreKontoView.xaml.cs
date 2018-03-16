@@ -27,7 +27,7 @@ namespace SwagAttack.Views
 
         private void Afbryd_OnClick(object sender, RoutedEventArgs e)
         {
-            NavigationService?.Navigate(new Uri("Views/PostLogIndView.xaml", UriKind.Relative));
+            NavigationService?.Navigate(new Uri("Views/PreLogIndView.xaml", UriKind.Relative));
         }
 
         private void OpretKonto_OnClick(object sender, RoutedEventArgs e)

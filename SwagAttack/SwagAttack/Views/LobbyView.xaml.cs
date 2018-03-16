@@ -30,12 +30,7 @@ namespace SwagAttack.Views
 
         private void LobbyViewList_Loaded(object sender, RoutedEventArgs e)
         {
-            LobbyList.Add(new Lobby()); // just for test
 
-            foreach (var VARIABLE in LobbyList.lobbyList)
-            {
-                LobbyViewList.Items.Add(VARIABLE);
-            }
         }
 
         private void Logud_OnClick(object sender, RoutedEventArgs e)
