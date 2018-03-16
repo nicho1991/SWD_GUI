@@ -5,13 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SwagAttack"
         xmlns:views="clr-namespace:SwagAttack.Views"
+        xmlns:viewmodels="clr-namespace:SwagAttack.ViewModels"
+        xmlns:cal="http://www.caliburnproject.org"
         mc:Ignorable="d"
         Title="SwagAttack - Det sygeste spil i verden!" Height="720" Width="1080" MinHeight="420" MinWidth="630" Icon="/SwagAttack;component/Ressources/SWAGLOGO2.jpg">
+    <Window.Resources>
+        <DataTemplate DataType="{ x:Type viewmodels:UserViewModel}">
+            <views:PreLogIndView></views:PreLogIndView>
+        </DataTemplate>
+      
+        </Window.Resources>
+    
+    <Window.DataContext>
+        <viewmodels:UserViewModel/>
+    </Window.DataContext>
+
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="/SwagAttack;component/Ressources/swagAttackGreenACastle.png"/>
         </Grid.Background>
-        <Frame Name="MainFrame" Source="PreLogIndView.xaml" NavigationUIVisibility="Hidden">
-        </Frame>
+        <ContentControl Content="{Binding}"></ContentControl>
     </Grid>
 </Window>

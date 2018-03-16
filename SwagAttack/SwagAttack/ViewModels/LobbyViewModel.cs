@@ -15,7 +15,7 @@ namespace SwagAttack.ViewModels
     {
         public List<ILobby> LobbyListBind => LobbyList.lobbyList;
 
-        public IReadOnlyCollection<IUser> Users
+        public IReadOnlyCollection<IUser> Users;
     }
 
 }
