@@ -15,17 +15,30 @@ namespace SwagAttack.ViewModels
     {
         public IUser User = null;
 
-        public string ddddT = "11";
-
-        public string UserBind
+        public IUser UserBind
         {
-            get { return ddddT; }
-            set { ddddT = value; }
+            get { return User; }
+           
         }
 
+        private string _ViewBind = "Pre";
+
+        public string ViewBind
+        {
+            get { return _ViewBind;}
+            set
+            {
+                _ViewBind = value;
+                OnPropertyChanged();
+            }
+        }
+        #region Commands
+
         private ICommand _createUserCommand;
+
         public ICommand CreateUserCommand =>
             _createUserCommand ?? (_createUserCommand = new RelayCommand(CreateUser_Execute, CreateUser_CanExecute));
+
         private void CreateUser_Execute()
         {
             var user = new User
@@ -37,10 +50,11 @@ namespace SwagAttack.ViewModels
 
             if (UserList.Add(user))
             {
-                User = user;
-                OnPropertyChanged("User");
+                //User = user;
+                //OnPropertyChanged("User");
+                ViewBind = "Pre";
             }
-                
+
         }
 
         private bool CreateUser_CanExecute()
@@ -57,11 +71,12 @@ namespace SwagAttack.ViewModels
                     if (user?.Password == Password)
                     {
                         User = user;
+                        ViewBind = "Post";
                         OnPropertyChanged("User");
+                        OnPropertyChanged("UserBind");
                     }
                 },
-                () => 
-                    (Username != null && Password != null)));
+                () =>(Username != null && Password != null)));
 
         private ICommand _createLobbyCommand;
 
@@ -73,6 +88,36 @@ namespace SwagAttack.ViewModels
                     LobbyList.Add(lobby);
                 },
                 () => User != null));
+
+        private ICommand _OpretKontoPressedCommand;
+
+        public ICommand OpretKontoPressedCommand =>
+            _OpretKontoPressedCommand ?? (_OpretKontoPressedCommand = new RelayCommand(
+                () =>
+                    {
+                        ViewBind = "Opret";
+                    }, () => true));
+
+        private ICommand _AfbrydOpretKontoPressedCommand;
+
+        public ICommand AfbrydOpretKontoPressedCommand =>
+            _AfbrydOpretKontoPressedCommand ?? (_AfbrydOpretKontoPressedCommand = new RelayCommand(
+                () =>
+                {
+                    ViewBind = "Pre";
+                }, () => true));
+
+        private ICommand _LogUdPressedCommand;
+
+        public ICommand LogUdPressedCommand =>
+            _LogUdPressedCommand ?? (_LogUdPressedCommand = new RelayCommand(
+                () =>
+                {
+                    ViewBind = "Pre";
+                }, () => true));
+
+        #endregion
+
 
         #region Properties
 

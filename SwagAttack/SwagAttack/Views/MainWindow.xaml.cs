@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using SwagAttack.ViewModels;
 
 namespace SwagAttack
 {
@@ -23,7 +24,10 @@ namespace SwagAttack
         public MainWindow()
         {
             InitializeComponent();
+            var ng = new NavigationViewModel();
             
+            DataContext = ng.SelectedViewModel;
+
         }
     }
 }

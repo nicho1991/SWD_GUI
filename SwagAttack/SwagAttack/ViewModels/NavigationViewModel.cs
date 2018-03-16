@@ -5,7 +5,7 @@ namespace SwagAttack.ViewModels
 {
     public class NavigationViewModel : BaseViewModel
     {
-        private object _selectedViewModel;
+        private object _selectedViewModel = new UserViewModel();
         public object SelectedViewModel
         {
             get => _selectedViewModel;

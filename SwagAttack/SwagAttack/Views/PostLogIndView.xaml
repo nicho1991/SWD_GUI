@@ -20,7 +20,7 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
 
-        <Button Grid.Row="0" Grid.Column="0" Style="{StaticResource LogUd}" x:Name="Logud" Click="Logud_OnClick"></Button>
+        <Button Grid.Row="0" Grid.Column="0" Style="{StaticResource LogUd}" x:Name="Logud" Command="{Binding LogUdPressedCommand}" ></Button>
 
         <StackPanel Grid.Column="1" Grid.Row="2" VerticalAlignment="Center">
             <Button x:Name="MineAktiveSpil" Click="MineAktiveSpil_OnClick">Mine Aktive Spil</Button>

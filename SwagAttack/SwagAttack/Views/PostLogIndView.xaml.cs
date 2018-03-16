@@ -25,10 +25,7 @@ namespace SwagAttack.Views
             InitializeComponent();
         }
 
-        private void Logud_OnClick(object sender, RoutedEventArgs e)
-        {
-            //NavigationService?.Navigate(new Uri("Views/PreLogIndView.xaml", UriKind.Relative));
-        }
+
 
         private void MineAktiveSpil_OnClick(object sender, RoutedEventArgs e)
         {

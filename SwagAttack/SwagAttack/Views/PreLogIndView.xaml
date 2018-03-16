@@ -3,7 +3,7 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:SwagAttack.Views"
+             xmlns:local="clr-namespace:SwagAttack.Views"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       >
@@ -21,10 +21,10 @@
             <RowDefinition Height="208*"></RowDefinition>
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="2" Grid.Column="1" VerticalAlignment="Center">
-            <TextBox Name="UsernameInput" Margin="0,5">Brugernavn</TextBox>
-            <PasswordBox Name="PasswordInput"></PasswordBox>
-            <Button x:Name="Login" Click="Login_OnClick">Log Ind</Button>
-            <Button x:Name="OpretKont" Click="OpretKont_OnClick">Opret Konto</Button>
+            <TextBox Name="UsernameInput" Margin="0,5" Text="{Binding Username}"></TextBox>
+            <TextBox Name="PasswordInput" Text="{Binding Password}" ></TextBox>
+            <Button x:Name="Login" Command="{Binding LoginCommand}">Log Ind</Button>
+            <Button x:Name="OpretKont" Command="{Binding OpretKontoPressedCommand}">Opret Konto</Button>
         </StackPanel>
     </Grid>
 
