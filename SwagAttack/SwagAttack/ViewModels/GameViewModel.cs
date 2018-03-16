@@ -10,7 +10,7 @@ namespace SwagAttack.ViewModels
 {
     public class GameViewModel
     {
-        public List<IGame> GameListBind => GameList.GamesList;
+        // To Be Implemented
 
     }
 }

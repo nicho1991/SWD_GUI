@@ -24,10 +24,7 @@ namespace SwagAttack
         public MainWindow()
         {
             InitializeComponent();
-            var ng = new NavigationViewModel();
-            
-            DataContext = ng.SelectedViewModel;
-
+            DataContext = NavigationViewModel.NG;
         }
     }
 }

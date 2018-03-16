@@ -23,8 +23,16 @@
         <DataTemplate x:Key="OpretKonto" DataType="{x:Type viewmodels:UserViewModel}">
             <views:OpreKontoView ></views:OpreKontoView>
         </DataTemplate>
+        <DataTemplate x:Key="AktiveSpil" DataType="{x:Type viewmodels:UserViewModel}">
+            <views:AktiveSpilView ></views:AktiveSpilView>
+        </DataTemplate>
+        
+        <DataTemplate DataType="{x:Type viewmodels:LobbyViewModel}">
+            <views:LobbyView />
+        </DataTemplate>
+        
 
-        <DataTemplate  DataType="{x:Type viewmodels:UserViewModel}">
+            <DataTemplate  DataType="{x:Type viewmodels:UserViewModel}">
             <ContentPresenter x:Name="Presenter"></ContentPresenter>
             <DataTemplate.Triggers>
                 <DataTrigger Binding="{Binding ViewBind}" Value="Pre">
@@ -36,6 +44,9 @@
                 <DataTrigger Binding="{Binding ViewBind }" Value="Opret">
                     <Setter TargetName="Presenter" Property="ContentTemplate" Value="{StaticResource OpretKonto}"></Setter>
                 </DataTrigger>
+                <DataTrigger Binding="{Binding ViewBind }" Value="Aktiv">
+                    <Setter TargetName="Presenter" Property="ContentTemplate" Value="{StaticResource AktiveSpil}"></Setter>
+                </DataTrigger>
             </DataTemplate.Triggers>
         </DataTemplate>
 
@@ -46,6 +57,6 @@
         <Grid.Background>
             <ImageBrush ImageSource="/SwagAttack;component/Ressources/swagAttackGreenACastle.png"/>
         </Grid.Background>
-        <ContentPresenter Content="{Binding}"></ContentPresenter>
+        <ContentPresenter Content="{Binding SelectedViewModel}"></ContentPresenter>
     </Grid>
 </Window>

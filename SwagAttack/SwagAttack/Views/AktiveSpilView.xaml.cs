@@ -25,26 +25,14 @@ namespace SwagAttack.Views
         public AktiveSpilView()
         {
             InitializeComponent();
+            
         }
 
         private void StartSpil_OnClick(object sender, RoutedEventArgs e)
         {
-            //NavigationService.Navigate(new Uri("Views/PostLogIndView.xaml", UriKind.Relative));
+            MessageBox.Show("Det valgte spil er startet");
         }
 
-        private void Afbryd_OnClick(object sender, RoutedEventArgs e)
-        {
-            //NavigationService.Navigate(new Uri("Views/PostLogIndView.xaml", UriKind.Relative));
-        }
-
-        private void Logud_OnClick(object sender, RoutedEventArgs e)
-        {
-            //NavigationService.Navigate(new Uri("Views/PreLogIndView.xaml", UriKind.Relative));
-        }
-
-        private void GameViewList_OnLoadedViewList_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
+ 
     }
 }

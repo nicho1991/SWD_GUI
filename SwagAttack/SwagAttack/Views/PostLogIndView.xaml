@@ -23,9 +23,9 @@
         <Button Grid.Row="0" Grid.Column="0" Style="{StaticResource LogUd}" x:Name="Logud" Command="{Binding LogUdPressedCommand}" ></Button>
 
         <StackPanel Grid.Column="1" Grid.Row="2" VerticalAlignment="Center">
-            <Button x:Name="MineAktiveSpil" Click="MineAktiveSpil_OnClick">Mine Aktive Spil</Button>
+            <Button x:Name="MineAktiveSpil" Command="{Binding AktiveSpilPressedCommand}">Mine Aktive Spil</Button>
             <Button x:Name="TilslutLobby" Click="TilslutLobby_OnClick">Tilslut Lobby</Button>
-            <Button x:Name="OpretLobby" Click="OpretLobby_OnClick">Opret Lobby</Button>
+            <Button x:Name="OpretLobby"  Command="{Binding CreateLobbyCommand}">Opret Lobby</Button>
         </StackPanel>
     </Grid>
 

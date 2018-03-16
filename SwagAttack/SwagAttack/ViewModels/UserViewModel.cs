@@ -32,6 +32,13 @@ namespace SwagAttack.ViewModels
                 OnPropertyChanged();
             }
         }
+
+        public IReadOnlyCollection<IGame> GameListBind
+        {
+            get { return User.AktiveSpilListe; }
+
+        }
+
         #region Commands
 
         private ICommand _createUserCommand;
@@ -85,6 +92,9 @@ namespace SwagAttack.ViewModels
                 () =>
                 {
                     var lobby = User.CreateLobby();
+                    lobby.AddUser(User);
+                    NavigationViewModel.NG.SelectedViewModel = new LobbyViewModel(User, lobby);
+
                     LobbyList.Add(lobby);
                 },
                 () => User != null));
@@ -107,6 +117,17 @@ namespace SwagAttack.ViewModels
                     ViewBind = "Pre";
                 }, () => true));
 
+        private ICommand _AfbrydPressedCommand;
+
+        public ICommand AfbrydPressedCommand =>
+            _AfbrydPressedCommand ?? (_AfbrydPressedCommand = new RelayCommand(
+                () =>
+                {
+                    ViewBind = "Post";
+                }, () => true));
+
+
+
         private ICommand _LogUdPressedCommand;
 
         public ICommand LogUdPressedCommand =>
@@ -114,6 +135,15 @@ namespace SwagAttack.ViewModels
                 () =>
                 {
                     ViewBind = "Pre";
+                }, () => true));
+
+        private ICommand _AktiveSpilPressedCommand;
+
+        public ICommand AktiveSpilPressedCommand =>
+            _AktiveSpilPressedCommand ?? (_AktiveSpilPressedCommand = new RelayCommand(
+                () =>
+                {
+                    ViewBind = "Aktiv";
                 }, () => true));
 
         #endregion

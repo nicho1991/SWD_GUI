@@ -14,6 +14,21 @@ namespace SwagAttack.Models
         public string Username { get; set; }
         public string Password { get; set; }
         public string Email { get; set; }
+        private readonly List<IGame> _AktiveSpilListe = new List<IGame>();
+
+        public IReadOnlyCollection<IGame> AktiveSpilListe => _AktiveSpilListe;
+
+        public void AddAktivtSpil(IGame game)
+        {
+            if (!_AktiveSpilListe.Contains(game))
+                _AktiveSpilListe.Add(game);
+        }
+
+        public void removeAktivtSpil(IGame game)
+        {
+            if (_AktiveSpilListe.Contains(game))
+                _AktiveSpilListe.Remove(game);
+        }
         public ILobby CreateLobby()
         {
             var lobby = new Lobby();

@@ -24,22 +24,12 @@ namespace SwagAttack.Views
         {
             InitializeComponent();
         }
-
-
-
-        private void MineAktiveSpil_OnClick(object sender, RoutedEventArgs e)
-        {
-            //NavigationService?.Navigate(new Uri("Views/AktiveSpilView.xaml", UriKind.Relative));
-        }
+        
 
         private void TilslutLobby_OnClick(object sender, RoutedEventArgs e)
         {
-           // NavigationService?.Navigate(new Uri("Views/LobbyView.xaml", UriKind.Relative));
+            MessageBox.Show("This is not implemented");
         }
 
-        private void OpretLobby_OnClick(object sender, RoutedEventArgs e)
-        {
-           //penis
-        }
     }
 }
