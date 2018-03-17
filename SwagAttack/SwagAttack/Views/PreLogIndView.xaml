@@ -22,8 +22,8 @@
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="2" Grid.Column="1" VerticalAlignment="Center">
             <TextBox Name="UsernameInput" Margin="0,5" Text="{Binding Username}"></TextBox>
-            <TextBox Name="PasswordInput" Text="{Binding Password}" ></TextBox>
-            <Button x:Name="Login" Command="{Binding LoginCommand}">Log Ind</Button>
+            <PasswordBox Name="PasswordInput"/>
+            <Button x:Name="Login" Command="{Binding LoginCommand}" CommandParameter="{Binding ElementName=PasswordInput}">Log Ind</Button>
             <Button x:Name="OpretKont" Command="{Binding OpretKontoPressedCommand}">Opret Konto</Button>
         </StackPanel>
     </Grid>

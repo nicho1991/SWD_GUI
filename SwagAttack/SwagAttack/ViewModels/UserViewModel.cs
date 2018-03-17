@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 using System.Windows.Input;
 using MvvmFoundation.Wpf;
 using SwagAttack.DAL;
@@ -71,9 +72,10 @@ namespace SwagAttack.ViewModels
 
         private ICommand _loginCommand;
         public ICommand LoginCommand =>
-            _loginCommand ?? (_loginCommand = new RelayCommand(()
+            _loginCommand ?? (_loginCommand = new RelayCommand<object>((param)
                 =>
                 {
+                    Password = ((PasswordBox) param).Password;
                     var user = UserList.FindUser(Username);
                     if (user?.Password == Password)
                     {
@@ -83,7 +85,7 @@ namespace SwagAttack.ViewModels
                         OnPropertyChanged("UserBind");
                     }
                 },
-                () =>(Username != null && Password != null)));
+                (param) =>(Username != null && Password != null)));
 
         private ICommand _createLobbyCommand;
 
@@ -125,8 +127,6 @@ namespace SwagAttack.ViewModels
                     ViewBind = "Post";
                 }, () => true));
 
-
-
         private ICommand _LogUdPressedCommand;
 
         public ICommand LogUdPressedCommand =>
@@ -146,7 +146,6 @@ namespace SwagAttack.ViewModels
                 }, () => true));
 
         #endregion
-
 
         #region Properties
 
@@ -174,6 +173,7 @@ namespace SwagAttack.ViewModels
                 if (_password != value)
                 {
                     _password = value;
+                    
                     OnPropertyChanged();
                 }
             }

@@ -26,7 +26,7 @@ namespace SwagAttack.Views
         public PreLogIndView()
         {
             InitializeComponent();
-            
+
         }
 
     }
