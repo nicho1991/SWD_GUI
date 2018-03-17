@@ -45,9 +45,24 @@ namespace SwagAttack.ViewModels
         private ICommand _createUserCommand;
 
         public ICommand CreateUserCommand =>
-            _createUserCommand ?? (_createUserCommand = new RelayCommand(CreateUser_Execute, CreateUser_CanExecute));
+            _createUserCommand ?? (_createUserCommand = new RelayCommand<object>((Param) =>
+                {
+                    Password = ((PasswordBox) Param).Password;
+                    CreateUser_Execute(Param);
 
-        private void CreateUser_Execute()
+                }, CreateUser_CanExecute
+                ));
+
+        private bool CreateUser_CanExecute(object Param)
+        {
+            if (Param == null)
+            {
+                return false;
+            }
+            Password = ((PasswordBox)Param).Password;
+            return (Username != null && Password.Length > 0 && Email != null);
+        }
+        private void CreateUser_Execute(object obj)
         {
             var user = new User
             {
@@ -63,11 +78,6 @@ namespace SwagAttack.ViewModels
                 ViewBind = "Pre";
             }
 
-        }
-
-        private bool CreateUser_CanExecute()
-        {
-            return (Username != null && Password != null && Email != null);
         }
 
         private ICommand _loginCommand;
