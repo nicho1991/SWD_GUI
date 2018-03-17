@@ -92,7 +92,6 @@ namespace SwagAttack.ViewModels
                 () =>
                 {
                     var lobby = User.CreateLobby();
-                    lobby.AddUser(User);
                     NavigationViewModel.NG.SelectedViewModel = new LobbyViewModel(User, lobby);
 
                     LobbyList.Add(lobby);
