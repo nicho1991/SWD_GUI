@@ -21,8 +21,8 @@
             <RowDefinition Height="208*"></RowDefinition>
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="2" Grid.Column="1" VerticalAlignment="Center">
-            <TextBox Name="UsernameInput" Margin="0,5" Text="{Binding Username}"></TextBox>
-            <PasswordBox Name="PasswordInput"/>
+            <TextBox Name="UsernameInput" Margin="0,5" Text="{Binding Username}" ToolTip="Username"></TextBox>
+            <PasswordBox Name="PasswordInput" ToolTip="Password"/>
             <Button x:Name="Login" Command="{Binding LoginCommand}" CommandParameter="{Binding ElementName=PasswordInput}">Log Ind</Button>
             <Button x:Name="OpretKont" Command="{Binding OpretKontoPressedCommand}">Opret Konto</Button>
         </StackPanel>
