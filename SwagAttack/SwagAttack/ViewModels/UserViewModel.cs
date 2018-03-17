@@ -85,7 +85,7 @@ namespace SwagAttack.ViewModels
                         OnPropertyChanged("UserBind");
                     }
                 },
-                (param) =>(Username != null && Password != null)));
+                (param) =>(Username != null)));
 
         private ICommand _createLobbyCommand;
 
