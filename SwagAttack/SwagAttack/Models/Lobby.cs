@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq.Expressions;
+using SwagAttack.DAL;
 using SwagAttack.Interfaces;
 
 namespace SwagAttack.Models
@@ -28,6 +29,7 @@ namespace SwagAttack.Models
                 game.AddUser(user);
             }
 
+	        GameList.Add(game);
             return game;
         }
     }
