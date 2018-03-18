@@ -18,11 +18,13 @@ namespace SwagAttack.Views
     /// <summary>
     /// Interaction logic for OpreKontoView.xaml
     /// </summary>
-    public partial class OpreKontoView : Page
+    public partial class OpreKontoView : UserControl
     {
         public OpreKontoView()
         {
             InitializeComponent();
         }
+
+ 
     }
 }

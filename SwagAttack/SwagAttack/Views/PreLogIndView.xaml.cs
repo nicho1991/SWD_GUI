@@ -12,17 +12,22 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using SwagAttack.DAL;
+using SwagAttack.Models;
+using SwagAttack.ViewModels;
 
 namespace SwagAttack.Views
 {
     /// <summary>
     /// Interaction logic for PreLogIndView.xaml
     /// </summary>
-    public partial class PreLogIndView : Page
+    public partial class PreLogIndView : UserControl
     {
         public PreLogIndView()
         {
             InitializeComponent();
+
         }
+
     }
 }

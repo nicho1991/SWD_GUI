@@ -5,14 +5,58 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SwagAttack"
         xmlns:views="clr-namespace:SwagAttack.Views"
+        xmlns:viewmodels="clr-namespace:SwagAttack.ViewModels"
+        xmlns:cal="http://www.caliburnproject.org"
+        xmlns:models="clr-namespace:SwagAttack.Models"
+        xmlns:interfaces="clr-namespace:SwagAttack.Interfaces"
         mc:Ignorable="d"
-        Title="MainWindow" Height="420" Width="600">
-    <Grid>
+        
+        Title="SwagAttack - Det sygeste spil i verden!" Height="720" Width="1080" MinHeight="420" MinWidth="630" Icon="/SwagAttack;component/Ressources/SWAGLOGO2.jpg">
 
+    <Window.Resources>
+        <DataTemplate x:Key="preLogInd" DataType="{x:Type viewmodels:UserViewModel}">
+            <views:PreLogIndView ></views:PreLogIndView>
+        </DataTemplate>
+        <DataTemplate x:Key="postLogInd" DataType="{x:Type viewmodels:UserViewModel}">
+            <views:PostLogIndView ></views:PostLogIndView>
+        </DataTemplate>
+        <DataTemplate x:Key="OpretKonto" DataType="{x:Type viewmodels:UserViewModel}">
+            <views:OpreKontoView ></views:OpreKontoView>
+        </DataTemplate>
+        <DataTemplate x:Key="AktiveSpil" DataType="{x:Type viewmodels:UserViewModel}">
+            <views:AktiveSpilView ></views:AktiveSpilView>
+        </DataTemplate>
+        
+        <DataTemplate DataType="{x:Type viewmodels:LobbyViewModel}">
+            <views:LobbyView />
+        </DataTemplate>
+        
+
+            <DataTemplate  DataType="{x:Type viewmodels:UserViewModel}">
+            <ContentPresenter x:Name="Presenter"></ContentPresenter>
+            <DataTemplate.Triggers>
+                <DataTrigger Binding="{Binding ViewBind}" Value="Pre">
+                    <Setter TargetName="Presenter" Property="ContentTemplate" Value="{StaticResource preLogInd}"></Setter>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding ViewBind }" Value="Post">
+                    <Setter TargetName="Presenter" Property="ContentTemplate" Value="{StaticResource postLogInd}"></Setter>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding ViewBind }" Value="Opret">
+                    <Setter TargetName="Presenter" Property="ContentTemplate" Value="{StaticResource OpretKonto}"></Setter>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding ViewBind }" Value="Aktiv">
+                    <Setter TargetName="Presenter" Property="ContentTemplate" Value="{StaticResource AktiveSpil}"></Setter>
+                </DataTrigger>
+            </DataTemplate.Triggers>
+        </DataTemplate>
+
+    </Window.Resources>
+
+
+    <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="/SwagAttack;component/Ressources/swagAttackGreenACastle.png"/>
         </Grid.Background>
-        <Frame Name="MainFrame" Source="LobbyView.xaml">
-        </Frame>
+        <ContentPresenter Content="{Binding SelectedViewModel}"></ContentPresenter>
     </Grid>
 </Window>

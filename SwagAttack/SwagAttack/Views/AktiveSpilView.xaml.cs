@@ -12,17 +12,27 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using SwagAttack.DAL;
+using SwagAttack.Models;
 
 namespace SwagAttack.Views
 {
     /// <summary>
     /// Interaction logic for AktiveSpilView.xaml
     /// </summary>
-    public partial class AktiveSpilView : Page
+    public partial class AktiveSpilView : UserControl
     {
         public AktiveSpilView()
         {
             InitializeComponent();
+            
         }
+
+        private void StartSpil_OnClick(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Det valgte spil er startet");
+        }
+
+ 
     }
 }

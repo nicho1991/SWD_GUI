@@ -18,7 +18,7 @@ namespace MvvmFoundation.Wpf
     {
         #region Constructors
 
-        public RelayCommand(Action<T> execute)
+        public RelayCommand(Action<T> execute, bool canExecute)
             : this(execute, null)
         {
         }

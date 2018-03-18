@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using SwagAttack.DAL;
+using SwagAttack.Models;
+using SwagAttack.ViewModels;
 
 namespace SwagAttack
 {
@@ -23,6 +26,13 @@ namespace SwagAttack
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = NavigationViewModel.NG;
+
+            User x = new User();
+            x.Password = "1";
+            x.Username = "1";
+
+            UserList.Add(x);
         }
     }
 }

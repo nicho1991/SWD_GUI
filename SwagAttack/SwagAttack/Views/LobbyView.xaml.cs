@@ -12,22 +12,20 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using SwagAttack.DAL;
+using SwagAttack.Models;
 
 namespace SwagAttack.Views
 {
     /// <summary>
     /// Interaction logic for LobbyView.xaml
     /// </summary>
-    public partial class LobbyView : Page
+    public partial class LobbyView : UserControl
     {
         public LobbyView()
         {
+
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
         }
 
     }

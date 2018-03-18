@@ -18,16 +18,18 @@ namespace SwagAttack.Views
     /// <summary>
     /// Interaction logic for PostLogIndView.xaml
     /// </summary>
-    public partial class PostLogIndView : Page
+    public partial class PostLogIndView : UserControl
     {
         public PostLogIndView()
         {
             InitializeComponent();
         }
+        
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void TilslutLobby_OnClick(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("This is not implemented");
         }
+
     }
 }
