@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using SwagAttack.DAL;
 using SwagAttack.Interfaces;
 
 namespace SwagAttack.Models
@@ -33,6 +34,7 @@ namespace SwagAttack.Models
         {
             var lobby = new Lobby();
             lobby.AddUser(this);
+			LobbyList.Add(lobby);
             return lobby;
         }
     }

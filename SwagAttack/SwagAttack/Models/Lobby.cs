@@ -28,8 +28,9 @@ namespace SwagAttack.Models
             {
                 game.AddUser(user);
             }
-
+			
 	        GameList.Add(game);
+	        
             return game;
         }
     }
