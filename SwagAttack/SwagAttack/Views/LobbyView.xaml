@@ -18,7 +18,7 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <ListView x:Name="LobbyViewList" Margin="0" Grid.Row="2" ItemsSource="{Binding Path=UserInLobbyListBind}" >
+        <ListView x:Name="LobbyViewList" Margin="0" Grid.Row="2" ItemsSource="{Binding Path=UserInLobbyListBind}" DisplayMemberPath="Username" >
            <!-- <ListViewItem Content="MinBruger420" FontWeight="Black" Loaded="ListViewItem_Loaded"/> -->
 
         </ListView>
